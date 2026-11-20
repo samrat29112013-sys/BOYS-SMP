@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BOYS SMP | Rank Store</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #080b14;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+header {
+    padding: 25px;
+    background: #111827;
+    border-bottom: 2px solid #a855f7;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+header span {
+    color: #c084fc;
+}
+
+.hero {
+    padding: 65px 15px 30px;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #c084fc;
+}
+
+.hero p {
+    color: #aab1c5;
+    line-height: 1.6;
+}
+
+.ranks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 35px 20px 60px;
+}
+
+.card {
+    width: 280px;
+    background: #151c2d;
+    border: 1px solid #30394f;
+    border-radius: 18px;
+    padding: 30px 22px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--rank);
+}
+
+.card h2 {
+    font-size: 30px;
+    color: var(--rank);
+    margin: 15px 0;
+}
+
+.price {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.card p {
+    color: #b6bfd2;
+    line-height: 1.7;
+    min-height: 55px;
+}
+
+.card button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 14px;
+    background: var(--rank);
+    border: none;
+    border-radius: 9px;
+    color: #080b14;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card button:hover {
+    filter: brightness(1.2);
+}
+
+.vip { --rank: #38d9e8; }
+.elite { --rank: #b77cff; }
+.deadly { --rank: #ff4d83; }
+
+footer {
+    padding: 25px;
+    background: #111827;
+    color: #9ca3af;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+BOYS <span>SMP</span>
+</header>
+
+<section class="hero">
+    <h1>RANK <span>STORE</span></h1>
+    <p>
+        Upgrade your gameplay and unlock your exclusive rank!
+        <br>
+        Choose your rank below.
+    </p>
+</section>
+
+<section class="ranks">
+
+<div class="card vip">
+    <h2>VIP</h2>
+    <div class="price">₹50</div>
+    <p>
+        VIP Rank Tag<br>
+        Exclusive Identity<br>
+        Support Boys SMP
+    </p>
+    <button onclick="buyRank('VIP')">BUY VIP</button>
+</div>
+
+<div class="card elite">
+    <h2>ELITE</h2>
+    <div class="price">₹100</div>
+    <p>
+        Elite Rank Tag<br>
+        Exclusive Identity<br>
+        Support Boys SMP
+    </p>
+    <button onclick="buyRank('ELITE')">BUY ELITE</button>
+</div>
+
+<div class="card deadly">
+    <h2>DEADLY</h2>
+    <div class="price">₹200</div>
+    <p>
+        Deadly Rank Tag<br>
+        Exclusive Identity<br>
+        Support Boys SMP
+    </p>
+    <button onclick="buyRank('DEADLY')">BUY DEADLY</button>
+</div>
+
+</section>
+
+<footer>
+    © 2026 BOYS SMP | ALL RIGHTS RESERVED
+</footer>
+
+<script>
+function buyRank(rank) {
+    alert(
+        "You selected " + rank +
+        " rank!\n\nJoin our Discord and create a ticket to purchase."
+    );
+
+    window.open(
+        "https://discord.gg/sUHF5EpKt",
+        "_blank"
+    );
+}
+</script>
+
+</body>
+</html>
